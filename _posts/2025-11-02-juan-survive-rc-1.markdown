@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Juan, How to Survive the RC Year
+title: Juan, How to Survive the RC Year (Part 1)
 categories: [Life]
 tags: [HBS, MBA, RC, guide, Harvard Business School]
 date: 2025-11-02
