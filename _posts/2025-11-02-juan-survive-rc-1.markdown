@@ -7,12 +7,6 @@ date: 2025-11-02
 excerpt_separator: <!--more-->
 ---
 
-**Juan, How to Survive the RC Year**
-
-**By Ash**
-
-## Foreward:
-
 This guide is designed to pack lots of learnings that I am uncovering as I go through the RC experience at HBS. Be warned, it's crazy... But it's also the most fun and incredible experience I've ever gone through.
 <!--more-->
 
