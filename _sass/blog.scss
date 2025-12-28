@@ -50,3 +50,97 @@ $color-gray: #FFFFFF;
 .footer-link:visited {
     color: white;
 }
+
+// Password protection styles
+.password-prompt {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.password-prompt-container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.password-prompt-container h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.password-prompt-container p {
+    margin-bottom: 1.5rem;
+    color: #586069;
+}
+
+.password-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.password-input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.password-input:focus {
+    outline: none;
+    border-color: #0366d6;
+    box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.1);
+}
+
+.password-submit {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #28a745;
+    border: 1px solid #28a745;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.password-submit:hover {
+    background-color: #22863a;
+    border-color: #22863a;
+}
+
+.password-submit:active {
+    background-color: #1e7e34;
+    border-color: #1e7e34;
+}
+
+.password-error {
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+// Protected content styling
+.protected-content {
+    display: block;
+}
+
+// Initially hide protected content until authenticated
+.protected-content.password-protected {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+// Show content when authenticated (class added by JS)
+.protected-content.password-authenticated {
+    visibility: visible;
+    height: auto;
+    overflow: visible;
+}

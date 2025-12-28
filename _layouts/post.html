@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting" {% if page.password %}data-post-password="{{ page.password }}"{% endif %}>
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
@@ -15,7 +15,7 @@ layout: default
       {%- endif -%}</p>
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
+  <div class="post-content e-content protected-content{% if page.password %} password-protected{% endif %}" itemprop="articleBody">
     {{ content }}
   </div>
 
@@ -25,3 +25,7 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+
+{% if page.password %}
+  <script src="{{ '/assets/password-protection.js' | relative_url }}"></script>
+{% endif %}
