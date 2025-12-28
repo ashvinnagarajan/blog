@@ -7,7 +7,7 @@ date: 2025-11-02
 excerpt_separator: <!--more-->
 ---
 
-This guide is designed to pack lots of learnings that I am uncovering as I go through the RC experience at HBS. Be warned, it's crazy... But it's also the most fun and incredible experience I've ever gone through.
+**This** guide is designed to pack lots of learnings that I am uncovering as I go through the RC experience at HBS. Be warned, it's crazy... But it's also the most fun and incredible experience I've ever gone through.
 <!--more-->
 
 I don't expect that this guide will help you avoid mistakes. You will definitely go through lots and lots of mistakes. But hopefully this guide does help serve as a comforting reminder that I went through those same tough experiences and everyone else around you is going through it as well.
