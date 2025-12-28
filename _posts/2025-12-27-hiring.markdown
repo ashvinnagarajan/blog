@@ -1,0 +1,37 @@
+---
+layout: post
+title: TableIQ - Hiring for Survival
+categories: [Work, TableIQ]
+tags: [TableIQ, startup, hiring, team building, remote work]
+date: 2025-12-27
+excerpt_separator: <!--more-->
+password: tableiq-pass
+---
+
+**Hiring** is one of those things that sounds straightforward until you actually have to do it. When you're building a startup and every dollar counts, every hire feels existential. We learned that lesson the hard way this fall.
+<!--more-->
+
+Our first hire was Myroslav, a non-technical controller based in Eastern Europe. His role was to review camera footage from our customer sites and extract the metrics that mattered most to them. It was manual work, but critical work. Someone had to watch hours of video and note down the data points that would help us understand what our customers actually cared about.
+<br/><br/>
+We built a Playback portal specifically for him, a tool that would make his job easier than jumping between different security camera provider apps. It was a small investment in infrastructure, but it made a huge difference in his ability to do his job efficiently. That was our first lesson: when you hire someone, you don't just bring them on board. You build the systems that enable them to succeed.
+<br/><br/>
+For our engineering hires, we knew we needed to be more careful. These weren't just contractors; these were people who would shape the technical direction of the company. So we devised a work trial assignment. Each engineer was given one week to analyze two days of video footage using AI and present the results of a key metric we wanted to track. It wasn't about perfection, it was about seeing how they thought, how they approached problems, and whether they could deliver something meaningful in a tight timeframe.
+<br/><br/>
+The assignment worked. It filtered for people who could actually execute, not just talk about execution. And it gave us a real sense of what it would be like to work with them before we made any long-term commitments.
+<br/><br/>
+We connected with Jagan Chitiprolu, a friend I'd worked with in Seattle on a nonprofit. He runs C2S Technologies, a software consulting company, and I'd actually worked out of his offices before. When we told him what we were building, he connected us with two of his engineers. After the work trial, we decided to take both of them on. And here's the thing that still blows my mind: Jagan gave us these engineers at his own cost because he really wanted us to succeed. That kind of support, especially in the early days, is everything.
+<br/><br/>
+One engineer was based in Seattle, the other in Hyderabad, India. We set up daily standup calls for one hour every single day. One engineer was responsible for creating a VLM-based pipeline, the other for the CNN-based architecture. Those daily calls became non-negotiable. No matter what was happening, social events, classes, whatever, we never missed that meeting. It was our commitment to the team, and it was their commitment to us.
+<br/><br/>
+Those calls taught us something important: we were capable of managing a team. We could dedicate that additional hour each day to the company, and we could make it work. It wasn't easy, but it was possible. And it showed us that we could scale beyond just the two of us.
+<br/><br/>
+But here's where it got hard. Our expectations for our hires were extremely high because it was existential for our company. If we didn't show progress, we wouldn't be able to survive to the summer at our current burn rate. Every day mattered. Every week mattered. And after three weeks, it became clear that one of our engineers wasn't performing up to par.
+<br/><br/>
+It felt like he wasn't working a full day. Every day's progress was too incremental. We'd set clear expectations, we'd given him a specific architecture to build, but the output just wasn't there. It was a tough decision, but after the first month, we terminated our contract with him.
+<br/><br/>
+That was painful. No one wants to let someone go, especially when you're a small team. But we learned that when something isn't working, you have to act quickly. Every week we waited was a week of runway we'd never get back. And in a startup, runway is everything.
+<br/><br/>
+For our first true employee, I know what I want: someone who would be willing to work extremely hard for the company and put their soul into the business. Even if that meant they would charge a significant premium for compensation. Because when you're this early, when every decision could be the difference between survival and failure, you need people who are all-in. You need people who care as much as you do.
+<br/><br/>
+Hiring is hard. Managing a team is hard. But it's also necessary. And maybe that's the point—you don't wait until you're ready. You figure it out as you go, you make mistakes, you learn, and you keep moving forward.
+
