@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chainguard: De-Risking Open Source Adoption
+title: Chainguard - De-Risking Open Source Adoption
 categories: [Technology]
 tags: [Chainguard, open source, security, supply chain, compliance]
 date: 2025-06-25
