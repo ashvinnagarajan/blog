@@ -1,7 +1,7 @@
 ---
 layout: post
-title: First Revenue
-categories: [Work]
+title: TableIQ - First Revenue
+categories: [Work, TableIQ]
 tags: [TableIQ, startup, revenue, milestone]
 date: 2025-10-20
 excerpt_separator: <!--more-->
@@ -18,11 +18,11 @@ So when we got the payment notification, the first thought that crossed our mind
 ![Stripe payment notification showing first revenue of $380.00]({{ "/assets/stripe_payment.png" | relative_url }})
 <br/><br/>
 <br/><br/>
-But it turns out they were actually getting value from what we'd built. Our pilot customer was finding the insights useful enough that they wanted us to have the payment. That validation hit differently than I expected. It wasn't just about the money—though seeing that first dollar hit our Stripe account was incredibly exciting—it was about the confirmation that we were building something real, something that mattered to someone other than ourselves.
+But it turns out they were actually getting value from what we'd built. Our pilot customer was finding the insights useful enough that they wanted us to have the payment. That validation hit differently than I expected. It wasn't just about the money, though seeing that first dollar hit our Stripe account was incredibly exciting, it was about the confirmation that we were building something real, something that mattered to someone other than ourselves.
 <br/><br/>
 The fact that this came from a pilot customer makes it even more meaningful. They took a chance on us when we had barely anything to show. They trusted us enough to test out our product, and they found enough value in it that they wanted to pay for it. That kind of early validation is worth more than the revenue itself.
 <br/><br/>
-There's something beautifully humbling about getting your first revenue when you're still figuring things out. We weren't ready for it in the way we thought we'd be—no polished product, no sales process, no clear pricing model. But maybe that's the point. Sometimes the market tells you you're ready before you feel ready yourself.
+There's something beautifully humbling about getting your first revenue when you're still figuring things out. We weren't ready for it in the way we thought we'd be: no polished product, no sales process, no clear pricing model. But maybe that's the point. Sometimes the market tells you you're ready before you feel ready yourself.
 <br/><br/>
 This is just the beginning, and I know there's still so much work ahead. But today feels like a milestone worth celebrating. We went from barely having an idea to having someone pay us for it. That's pretty wild when I stop to think about it.
 <br/><br/>
