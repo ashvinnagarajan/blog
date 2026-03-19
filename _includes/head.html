@@ -4,16 +4,21 @@
 
   <link rel="icon" href="favicon.png" type="image/png" />
 
-  <title>Adventus | Blog by Ashvin Nagarajan</title>
+  <title>{% if page.title %}{{ page.title | escape }} — {% endif %}Adventus</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
- 
+
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
 
-  
   <script src="https://kit.fontawesome.com/3a82081a41.js"></script>
 </head>

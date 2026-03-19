@@ -2,25 +2,28 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
-  min-height: $spacing-unit * 1.865;
-
-  // Positioning context for the mobile navigation icon
+  background-image: $gradient;
+  padding: 16px 0;
   position: relative;
 }
 
 .site-title {
-  @include relative-font-size(1.625);
-  font-weight: 300;
-  line-height: $base-line-height * $base-font-size * 2.25;
-  letter-spacing: -1px;
+  font-family: $heading-font-family;
+  @include relative-font-size(1.35);
+  font-weight: 700;
+  letter-spacing: -0.02em;
   margin-bottom: 0;
   float: left;
+  line-height: $base-line-height * $base-font-size * 2.25;
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: white;
+  }
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
   }
 }
 
@@ -37,21 +40,35 @@
   }
 
   .page-link {
+    font-family: $heading-font-family;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
     line-height: $base-line-height;
+    transition: color 0.2s ease;
 
-    // Gaps between nav items, but not on the last one
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+
+    &:visited {
+      color: rgba(255, 255, 255, 0.85);
+    }
+
     &:not(:last-child) {
-      margin-right: 20px;
+      margin-right: 24px;
     }
   }
 
   @include media-query($on-palm) {
     position: absolute;
-    top: 9px;
+    top: 12px;
     right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
     text-align: right;
 
     label[for="nav-trigger"] {
@@ -73,7 +90,7 @@
       text-align: center;
 
       > svg {
-        fill: $grey-color-dark;
+        fill: white;
       }
     }
 
@@ -89,12 +106,12 @@
 
     .page-link {
       display: block;
-      padding: 5px 10px;
+      padding: 8px 16px;
 
       &:not(:last-child) {
         margin-right: 0;
       }
-      margin-left: 20px;
+      margin-left: 0;
     }
   }
 }
@@ -103,8 +120,9 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  background-image: $gradient;
+  padding: $spacing-unit * 1.5 0;
+  margin-top: $spacing-unit * 2;
 }
 
 .footer-heading {
@@ -171,7 +189,7 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+  padding: $spacing-unit * 1.5 0;
   flex: 1;
 }
 
@@ -193,27 +211,45 @@
 }
 
 .post-meta {
+  font-family: $heading-font-family;
   font-size: $small-font-size;
   color: $grey-color;
 }
 
 .post-link {
-  @include relative-font-size(1.5);
+  @include relative-font-size(1.35);
+  font-family: $heading-font-family;
+  font-weight: 600;
+  color: $text-color;
+  letter-spacing: -0.02em;
+
+  &:hover {
+    color: $brand-color;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $text-color;
+  }
 }
-
-
 
 /**
  * Posts
  */
+.post-header {
+  margin-bottom: $spacing-unit;
+}
 
 .post-title {
-  @include relative-font-size(2.625);
-  letter-spacing: -1px;
-  line-height: 1;
+  @include relative-font-size(2.25);
+  font-family: $heading-font-family;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  color: $text-color;
 
   @include media-query($on-laptop) {
-    @include relative-font-size(2.25);
+    @include relative-font-size(1.875);
   }
 }
 
@@ -221,26 +257,28 @@
   margin-bottom: $spacing-unit;
 
   h2 {
-    @include relative-font-size(2);
+    @include relative-font-size(1.75);
+    margin-top: $spacing-unit * 1.5;
 
     @include media-query($on-laptop) {
-      @include relative-font-size(1.75);
+      @include relative-font-size(1.5);
     }
   }
 
   h3 {
-    @include relative-font-size(1.625);
+    @include relative-font-size(1.375);
+    margin-top: $spacing-unit;
 
     @include media-query($on-laptop) {
-      @include relative-font-size(1.375);
+      @include relative-font-size(1.25);
     }
   }
 
   h4 {
-    @include relative-font-size(1.25);
+    @include relative-font-size(1.125);
 
     @include media-query($on-laptop) {
-      @include relative-font-size(1.125);
+      @include relative-font-size(1.0625);
     }
   }
 }

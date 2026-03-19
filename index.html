@@ -1,44 +1,31 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
 ---
 
 <div class="home">
-    {%- if page.title -%}
-      <h1 class="page-heading">{{ page.title }}</h1>
-    {%- endif -%}
-  
-    {{ content }}
-  
-    {%- if site.posts.size > 0 -%}
 
-    <hr/>
-
-      <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2> -->
-      <ul class="post-list">
-        {%- for post in site.posts -%}
-        <li class="post-item">
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <div class="post-head">
-            <h3 class="post-link">
-              <a class="post-link" href="{{ post.url | relative_url }}">
-                {{ post.title | escape }}
-              </a>
-            </h3>
-            <h3 class="post-info">
-              <p class="post-link">{{ post.date | date: date_format }}</p>
-            </h3>
-          </div>
-          {{ post.excerpt}}
-      
-        </li>
-        {%- endfor -%}
-      </ul>
-  
-      <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
-    {%- endif -%}
-  
+  <div class="home-hero">
+    <h1>Adventus</h1>
+    <p>Thoughts on engineering, building, and figuring things out.</p>
   </div>
-  
+
+  {%- if site.posts.size > 0 -%}
+    <hr class="section-divider" />
+
+    {%- for post in site.posts -%}
+    <div class="post-card">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <div class="post-card-meta">{{ post.date | date: date_format }}</div>
+      <h3 class="post-card-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </h3>
+      {%- if post.excerpt -%}
+        <div class="post-card-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</div>
+      {%- endif -%}
+      <a class="read-more" href="{{ post.url | relative_url }}">Read more</a>
+    </div>
+    {%- endfor -%}
+
+  {%- endif -%}
+
+</div>

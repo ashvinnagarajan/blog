@@ -8,8 +8,6 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-
-
 /**
  * Basic styling
  */
@@ -28,8 +26,6 @@ body {
   flex-direction: column;
 }
 
-
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -37,19 +33,15 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 5;
+  margin-bottom: $spacing-unit / 2;
 }
-
-
 
 /**
  * `main` element
  */
 main {
-  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+  display: block;
 }
-
-
 
 /**
  * Images
@@ -57,9 +49,8 @@ main {
 img {
   max-width: 100%;
   vertical-align: middle;
+  border-radius: 8px;
 }
-
-
 
 /**
  * Figures
@@ -70,9 +61,8 @@ figure > img {
 
 figcaption {
   font-size: $small-font-size;
+  color: $text-color-light;
 }
-
-
 
 /**
  * Lists
@@ -88,16 +78,15 @@ li {
   }
 }
 
-
-
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight;
+  font-family: $heading-font-family;
+  font-weight: 600;
+  color: $text-color;
+  letter-spacing: -0.02em;
 }
-
-
 
 /**
  * Links
@@ -105,13 +94,14 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: $brand-color;
   text-decoration: none;
+  transition: color 0.2s ease;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: darken($brand-color, 10%);
   }
 
   &:hover {
-    color: $text-color;
+    color: darken($brand-color, 15%);
     text-decoration: underline;
   }
 
@@ -124,16 +114,14 @@ a {
   }
 }
 
-
 /**
  * Blockquotes
  */
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
-  @include relative-font-size(1.125);
-  letter-spacing: -1px;
+  color: $text-color-light;
+  border-left: 3px solid $brand-color-light;
+  padding-left: $spacing-unit;
+  @include relative-font-size(1.1);
   font-style: italic;
 
   > :last-child {
@@ -141,25 +129,24 @@ blockquote {
   }
 }
 
-
-
 /**
  * Code formatting
  */
 pre,
 code {
-  @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
-  border-radius: 3px;
-  background-color: #eef;
+  @include relative-font-size(0.875);
+  font-family: "SF Mono", "Fira Code", "Fira Mono", Menlo, Consolas, monospace;
+  border: 1px solid $card-border;
+  border-radius: 6px;
+  background-color: #fdfcfa;
 }
 
 code {
-  padding: 1px 5px;
+  padding: 2px 6px;
 }
 
 pre {
-  padding: 8px 12px;
+  padding: 16px 20px;
   overflow-x: auto;
 
   > code {
@@ -169,7 +156,14 @@ pre {
   }
 }
 
-
+/**
+ * Horizontal rule
+ */
+hr {
+  border: none;
+  border-top: 1px solid $card-border;
+  margin: $spacing-unit * 1.5 0;
+}
 
 /**
  * Wrapper
@@ -191,8 +185,6 @@ pre {
   }
 }
 
-
-
 /**
  * Clearfix
  */
@@ -202,12 +194,9 @@ pre {
   clear: both;
 }
 
-
-
 /**
  * Icons
  */
-
 .svg-icon {
     width: 16px;
     height: 16px;
@@ -219,13 +208,32 @@ pre {
 
 .social-media-list {
   display: flex;
-  padding: 5px;
-  font-size: 36px;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+  margin-left: 0;
 }
 
-i {
+.social-media-list li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  transition: background 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+  }
+}
+
+.social-media-list i {
   color: white;
-  margin-right: 15px;
+  font-size: 18px;
+  margin: 0;
 }
 
 /**
@@ -235,23 +243,29 @@ table {
   margin-bottom: $spacing-unit;
   width: 100%;
   text-align: $table-text-align;
-  color: lighten($text-color, 18%);
+  color: $text-color-light;
   border-collapse: collapse;
-  border: 1px solid $grey-color-light;
+  border: 1px solid $card-border;
+  border-radius: 8px;
+  overflow: hidden;
+
   tr {
     &:nth-child(even) {
-      background-color: lighten($grey-color-light, 6%);
+      background-color: rgba(139, 111, 78, 0.04);
     }
   }
   th, td {
     padding: ($spacing-unit / 3) ($spacing-unit / 2);
   }
   th {
-    background-color: lighten($grey-color-light, 3%);
-    border: 1px solid darken($grey-color-light, 4%);
-    border-bottom-color: darken($grey-color-light, 12%);
+    background-color: rgba(139, 111, 78, 0.08);
+    border: 1px solid $card-border;
+    border-bottom-color: darken($card-border, 8%);
+    font-family: $heading-font-family;
+    font-weight: 600;
+    color: $text-color;
   }
   td {
-    border: 1px solid $grey-color-light;
+    border: 1px solid $card-border;
   }
 }
